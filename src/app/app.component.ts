@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AmplifyService } from 'aws-amplify-angular';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-amplify-cognito-starter';
+
+  constructor(private amplifyService: AmplifyService) {}
 }
